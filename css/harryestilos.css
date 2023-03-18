@@ -1,0 +1,21 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    background-color: yellow;
+}
+
+.homero{
+    display: flex;
+    justify-content:center;
+    align-items: stretch;
+    text-align: center;
+
+}
+.video{
+    margin-top:3rem;
+    margin: 1rem;
+}
