@@ -11,3 +11,8 @@ body{
 .btn{
     color: white;
 }
+
+.textohomero{
+    display: flex;
+    justify-content: center;
+}
