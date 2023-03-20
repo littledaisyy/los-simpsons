@@ -21,3 +21,15 @@ body{
     display: flex;
     justify-content: left;
 }
+
+.quede{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.noentendi{
+    height: 100%;
+    width: 50%;
+}
