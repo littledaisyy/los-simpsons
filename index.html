@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="css/harryestilos.css">
     <link rel="shortcut icon" href="assets/homerin.webp">
     <title> Los Simpsons</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
   </head>
   <body>
     <!--soy navbar-->
@@ -14,7 +15,7 @@
       <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
         <div class="container-fluid">
           <a class="navbar-brand" id="casita">
-            <img src="assets/The_Simpsons_yellow_logo.svg" alt="" height="50px">
+            <img src="assets/The_Simpsons_yellow_logo.svg" alt="" height="50px" class="animate__animated animate__rubberBand">
           </a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -37,11 +38,6 @@
                   <li><a class="dropdown-item" href="#lisa">LISA</a></li>
                   <li><a class="dropdown-item" href="#maggie">MAGGIE</a></li>
                   <li>
-                    <hr class="dropdown-divider">
-                    <div class="col-xl-12 col-md-12 col-sm-12">
-                      <audio class="col-xl-12 col-md-12 col-sm-12 boton" src="assets/audio.mp3"  controls loop autoplay ></audio>
-                    </div>
-                  </li>
                 </ul>
               </li>
               <li class="nav-item">
@@ -55,8 +51,13 @@
           </div>
         </div>
       </nav>
+      <br>
 
+      <div class="col-xl-12 col-md-12 col-sm-12">
+        <audio class="col-xl-12 col-md-12 col-sm-12 boton" src="assets/audio simpson_mezcla.wav"  controls loop ></audio>
+      </div>
 
+      <br>
     <!--soy carrousel-->
         <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
             <div class="carousel-inner">
@@ -87,7 +88,7 @@
             <br>
             <h1 class="text-center">HOMERO</h1>
             <br>
-            <img src="assets/homerin.webp"  height="70%"  width="40%" class="homerito">
+            <img src="assets/homerin.webp"  height="70%"  width="40%" class="homerito animate__animated animate__backInLeft wow">
             <p class="textohomero">Es el prototipo del hombre de clase media estadounidense: desinteresado, obeso,
               alcohólico, y algo torpe. Es considerado uno de los personajes animados más populares alrededor del mundo. Ha
               tenido muchas apariciones en diferentes medios debido a ser un ícono de la cultura popular moderna, incluyendo
@@ -134,7 +135,7 @@
 
         <aside class="col-xl-4 col-md-4 col-sm-12 d-flex flex-column align-content-center  justify-content-center quede">
           <h1 class="d-flex  align-content-center justify-content-center" >MARGE</h1>
-          <img  class="d-flex  align-content-end  justify-content-end noentendi" src="assets/marge.png" alt="">
+          <img  class="d-flex  align-content-end  justify-content-end noentendi animate__animated animate__backInRight wow" src="assets/marge.png" alt="">
         </aside>
       </section>
 
@@ -149,10 +150,10 @@
       <section class="row" id="bart">
         <aside class="col-xl-6 col-md-6 col-sm-12 d-flex align-items-center flex-column">
           <h1 class="text-center">BART</h1>
-          <img src="assets/bart.webp"  height="50%"  width="40%">
+          <img src="assets/bart.webp"  height="50%"  width="40%" class="animate__animated animate__backInLeft wow">
           <p class="textobart">Bart es decididamente el más rebelde y travieso de la familia. Es un muchacho simpático y también muy travieso, que hace muchas bromas con su mejor amigo Milhouse. Sigue los programas de su ídolo Krusty el Payaso. Es desobediente y hace todo lo que le pasa por la cabeza. Su nombre es un anagrama de "brat", que en inglés significa "travieso".</p>   
 
-          <div class=" d-flex justify-content-center align-content-center" >
+          <div class="d-flex justify-content-center align-content-center" >
             <button type="button" class=" btn btn-secondary">
               <a class="btn" href="#homero"> HOMERO</a>
             </button>
@@ -170,7 +171,7 @@
         <aside class="col-xl-6 col-md-6 col-sm-12 d-flex align-items-center flex-column">
           <br>
           <h1 class="text-center">LISA</h1>
-          <img src="assets/lisa.png"  height="47%"  width="40%" id="lisa">
+          <img src="assets/lisa.png"  height="47%"  width="40%" id="lisa" class="animate__animated animate__backInRight wow">
 
           <p class="textohomero">Es el prototipo del hombre de clase media estadounidense: desinteresado, obeso,
             alcohólico, y algo torpe. Es considerado uno de los personajes animados más populares alrededor del mundo. Ha
@@ -204,9 +205,9 @@
             </div>
           </aside>
   
-          <aside class="col-xl-4 col-md-4 col-sm-4 d-flex justify-content-center align-items-center">
+          <aside class="col-xl-4 col-md-4 col-sm-4 d-flex justify-content-center align-items-center flex-column">
             <h1>MAGGIE</h1>
-            <img src="assets/maggie.png" alt="" width="50%">
+            <img src="assets/maggie.png" alt="" width="50%" class="animate__animated animate__backInRight wow ">
           </aside>
   
           <aside class="col-xl-4 col-md-4 col-sm-12 d-flex flex-column align-content-center  justify-content-center">
@@ -228,7 +229,7 @@
           <h5 class="derechos"><b>Todos los derechos reservados ©</h5></b>
           
         </footer>
-  
+  </div>
 
 
 
@@ -238,8 +239,12 @@
 
 
 
+  <script src="js/wow.min.js"></script>
+  <script>
+  new WOW().init();
+  </script> 
 
     <script src="js/bootstrap.bundle.min.js"></script>
-  </div>
+  
   </body>
 </html>
