@@ -2,10 +2,20 @@
     box-sizing: border-box;
 }
 
+@font-face {
+    font-family: simpson;
+    src: url(../assets/simpson.otf);
+}
+
 body{
     margin: 0;
     padding: 0;
     background-color: #ffd90f;
+    font-family: simpson;
+}
+.naranja{
+    background-color: #ffc107;
+    color: black;
 }
 
 .btn{
@@ -32,4 +42,8 @@ body{
 .noentendi{
     height: 100%;
     width: 50%;
+}
+
+img{
+    margin-top:0;
 }
